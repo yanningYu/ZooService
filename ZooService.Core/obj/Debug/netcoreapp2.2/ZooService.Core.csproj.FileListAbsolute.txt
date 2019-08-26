@@ -1,0 +1,8 @@
+C:\Demo\ZooService\ZooService.Core\bin\Debug\netcoreapp2.2\ZooService.Core.deps.json
+C:\Demo\ZooService\ZooService.Core\bin\Debug\netcoreapp2.2\ZooService.Core.dll
+C:\Demo\ZooService\ZooService.Core\bin\Debug\netcoreapp2.2\ZooService.Core.pdb
+C:\Demo\ZooService\ZooService.Core\obj\Debug\netcoreapp2.2\ZooService.Core.csproj.CoreCompileInputs.cache
+C:\Demo\ZooService\ZooService.Core\obj\Debug\netcoreapp2.2\ZooService.Core.AssemblyInfoInputs.cache
+C:\Demo\ZooService\ZooService.Core\obj\Debug\netcoreapp2.2\ZooService.Core.AssemblyInfo.cs
+C:\Demo\ZooService\ZooService.Core\obj\Debug\netcoreapp2.2\ZooService.Core.dll
+C:\Demo\ZooService\ZooService.Core\obj\Debug\netcoreapp2.2\ZooService.Core.pdb

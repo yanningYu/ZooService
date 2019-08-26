@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZooService.API", "ZooService.API\ZooService.API.csproj", "{E040E750-F1E8-47CC-8AE1-C9D0BBBBF10B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooService.Core", "ZooService.Core\ZooService.Core.csproj", "{36E18695-F151-4363-B89C-19766A403E8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E040E750-F1E8-47CC-8AE1-C9D0BBBBF10B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E040E750-F1E8-47CC-8AE1-C9D0BBBBF10B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E040E750-F1E8-47CC-8AE1-C9D0BBBBF10B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E040E750-F1E8-47CC-8AE1-C9D0BBBBF10B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36E18695-F151-4363-B89C-19766A403E8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36E18695-F151-4363-B89C-19766A403E8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36E18695-F151-4363-B89C-19766A403E8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36E18695-F151-4363-B89C-19766A403E8C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {660CD550-23CE-4BB0-8454-443A17CB6CCB}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,17 @@
+C:\Demo\ZooService\ZooService.API\bin\Debug\netcoreapp2.2\ZooService.API.deps.json
+C:\Demo\ZooService\ZooService.API\bin\Debug\netcoreapp2.2\ZooService.API.runtimeconfig.json
+C:\Demo\ZooService\ZooService.API\bin\Debug\netcoreapp2.2\ZooService.API.runtimeconfig.dev.json
+C:\Demo\ZooService\ZooService.API\bin\Debug\netcoreapp2.2\ZooService.API.dll
+C:\Demo\ZooService\ZooService.API\bin\Debug\netcoreapp2.2\ZooService.API.pdb
+C:\Demo\ZooService\ZooService.API\obj\Debug\netcoreapp2.2\ZooService.API.csproj.CoreCompileInputs.cache
+C:\Demo\ZooService\ZooService.API\obj\Debug\netcoreapp2.2\ZooService.API.RazorAssemblyInfo.cache
+C:\Demo\ZooService\ZooService.API\obj\Debug\netcoreapp2.2\ZooService.API.RazorAssemblyInfo.cs
+C:\Demo\ZooService\ZooService.API\obj\Debug\netcoreapp2.2\ZooService.API.AssemblyInfoInputs.cache
+C:\Demo\ZooService\ZooService.API\obj\Debug\netcoreapp2.2\ZooService.API.AssemblyInfo.cs
+C:\Demo\ZooService\ZooService.API\obj\Debug\netcoreapp2.2\ZooService.API.RazorTargetAssemblyInfo.cache
+C:\Demo\ZooService\ZooService.API\obj\Debug\netcoreapp2.2\ZooService.API.dll
+C:\Demo\ZooService\ZooService.API\obj\Debug\netcoreapp2.2\ZooService.API.pdb
+C:\Demo\ZooService\ZooService.API\bin\Debug\netcoreapp2.2\ZooService.Core.dll
+C:\Demo\ZooService\ZooService.API\bin\Debug\netcoreapp2.2\ZooService.Core.pdb
+C:\Demo\ZooService\ZooService.API\obj\Debug\netcoreapp2.2\ZooService.API.csprojAssemblyReference.cache
+C:\Demo\ZooService\ZooService.API\obj\Debug\netcoreapp2.2\ZooService.API.csproj.CopyComplete
