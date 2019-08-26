@@ -20,7 +20,7 @@ namespace ZooService.Core.Consumers
         public override int? ReducedHealth()
         {
             var reducedHealthNumber = base.ReducedHealth();
-            if (this.Animal.CurrentAnimalHealthNumber < 70)
+            if (this.Animal.CurrentAnimalHealthNumber < ZooServiceConfiguration.ElephantSurvivalHealthNumber)
             {
                 this.Animal.SurvivalSituation = false;
                 return null;

@@ -16,7 +16,7 @@ namespace ZooService.Core.Models
 
         public string Category { get; set; }
 
-        public double CurrentAnimalHealthNumber { get; set; } = 100;
+        public double CurrentAnimalHealthNumber { get; set; } = ZooServiceConfiguration.InitialHealthNumber;
 
         public int ReducedHealthNumber { get; set; }
 

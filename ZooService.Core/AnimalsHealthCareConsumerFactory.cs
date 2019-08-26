@@ -11,6 +11,7 @@ namespace ZooService.Core
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using System.Reflection;
 
     using ZooService.Core.Abstracts;
     using ZooService.Core.Consumers;
@@ -40,6 +41,7 @@ namespace ZooService.Core
             }
         }
 
+        public static bool AnyLive => listConsumer?.Any(x => x.Animal.SurvivalSituation) ?? true;
         public static void UpdateData(List<Animal> data)
         {
             try
@@ -64,11 +66,19 @@ namespace ZooService.Core
         private List<AbstractAnimalHealthCareConsumer> List()
         {
             var list = new List<AbstractAnimalHealthCareConsumer>();
+            var instanceSpec = ZooServiceConfiguration.ConsumerAssemblies;
+            string[] instances = instanceSpec.Split(';');
+           
             for (int i = 0; i < 5; i++)
             {
-                list.Add(new ElephantHealthCareConsumer());
-                list.Add(new MonkeyHealthCareConsumer());
-                list.Add(new GiraffeHealthCareConsumer());
+                object item;
+                for (int j = 0; j < instances.Length; j++)
+                {
+                    
+                    item = Activator.CreateInstance(Type.GetType(instances[j]));
+                    
+                    list.Add(item as AbstractAnimalHealthCareConsumer);
+                }
             }
 
             return list;

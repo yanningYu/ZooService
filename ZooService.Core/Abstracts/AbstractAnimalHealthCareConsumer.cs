@@ -21,29 +21,8 @@ namespace ZooService.Core.Abstracts
         public virtual int? ReducedHealth()
         {
             var random = new Random();
-            var reducedNumber   = random.Next(0, 20);
+            var reducedNumber   = random.Next(ZooServiceConfiguration.MinReducedHealthNumber, ZooServiceConfiguration.MaxReducedHealthNumber);
             return reducedNumber;
-        }
-
-
-      
-        /// <summary>
-        /// The feed animal.
-        /// </summary>
-        protected virtual void FeedAnimal()
-        {
-            if (!this.Animal.SurvivalSituation || this.Animal.CurrentAnimalHealthNumber == 100)
-            {
-                return;
-            }
-
-            var random = new Random();
-            var healthNumber = random.Next(10, 25);
-            var temp = this.Animal.CurrentAnimalHealthNumber + healthNumber;
-            if (temp > 100)
-            {
-                this.Animal.CurrentAnimalHealthNumber = 100;
-            }
         }
     }
 }

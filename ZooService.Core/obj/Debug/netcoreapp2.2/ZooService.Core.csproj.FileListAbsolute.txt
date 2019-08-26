@@ -6,3 +6,4 @@ C:\Demo\ZooService\ZooService.Core\obj\Debug\netcoreapp2.2\ZooService.Core.Assem
 C:\Demo\ZooService\ZooService.Core\obj\Debug\netcoreapp2.2\ZooService.Core.AssemblyInfo.cs
 C:\Demo\ZooService\ZooService.Core\obj\Debug\netcoreapp2.2\ZooService.Core.dll
 C:\Demo\ZooService\ZooService.Core\obj\Debug\netcoreapp2.2\ZooService.Core.pdb
+C:\Demo\ZooService\ZooService.Core\obj\Debug\netcoreapp2.2\ZooService.Core.csprojAssemblyReference.cache

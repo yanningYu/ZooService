@@ -4,15 +4,14 @@
 // Created Date:  22/08/2019  18:41
 // Last Edit:
 //    Author:   Frankie
-//    Date:     22/08/2019  18:41
+//    Date:     26/08/2019  16:40
 
 namespace ZooService.API.TimerFeatures
 {
     using System;
-    using System.Linq;
     using System.Threading;
 
-    using ZooService.API.DataStorage;
+    using ZooService.Core;
 
     public class TimerManager
     {
@@ -29,21 +28,18 @@ namespace ZooService.API.TimerFeatures
             this.action = action;
             this.condition = condition;
             this.autoResetEvent = new AutoResetEvent(false);
-            
-            this.timer = new Timer(Execute, this.autoResetEvent, 3000, 20000);
-            this.TimerStarted = DateTime.Now;
-        }
 
-        public DateTime TimerStarted { get; }
+            this.timer = new Timer(this.Execute, this.autoResetEvent, 1000, ZooServiceConfiguration.PassingRate * 1000);
+        }
 
         public void Execute(object stateInfo)
         {
-            this.action();
-            
-            if (false)
+
+            if (!this.condition())
             {
                 this.timer.Dispose();
             }
+            this.action();
         }
     }
 }

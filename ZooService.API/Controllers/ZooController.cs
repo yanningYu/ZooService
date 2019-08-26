@@ -18,6 +18,7 @@ namespace ZooService.API.Controllers
     using ZooService.API.DataStorage;
     using ZooService.API.HubConfig;
     using ZooService.API.TimerFeatures;
+    using ZooService.Core;
 
     [Route("api/zoo")]
     [ApiController]
@@ -32,11 +33,9 @@ namespace ZooService.API.Controllers
 
         public IActionResult Get()
         {
-            Func<bool> condition = () =>
-                {
-                    var data = ZooDataManager.GetData();
+            Func<bool> condition = () => AnimalsHealthCareConsumerFactory.AnyLive;
 
-                    return data.Any(x=>x.SurvivalSituation); };
+
             var timerManager = new TimerManager(() => this.hub.Clients.All.SendAsync("transferzoodata", ZooDataManager.GetData()),condition);
 
             return this.Ok(new { Message = "Request Completed" });

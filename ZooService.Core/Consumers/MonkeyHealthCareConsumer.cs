@@ -8,6 +8,7 @@
 
 namespace ZooService.Core.Consumers
 {
+    using System;
     using System.Timers;
 
     using ZooService.Core.Abstracts;
@@ -15,8 +16,8 @@ namespace ZooService.Core.Consumers
 
     public class MonkeyHealthCareConsumer : AbstractAnimalHealthCareConsumer
     {
-        private readonly Animal animal = new Animal { Category = "Monkey" };
-        public override Animal Animal => this.animal;
+        private readonly Animal animal = new Animal { Id = Guid.NewGuid(), Category = "Monkey" };
+        public override Animal Animal { get => base.Animal ?? this.animal; set => base.Animal = value; }
         public override int? ReducedHealth()
         {
             if (!this.Animal.SurvivalSituation)
@@ -27,7 +28,7 @@ namespace ZooService.Core.Consumers
             var reducedHealthNumber = base.ReducedHealth();
             this.Animal.ReducedHealthNumber = reducedHealthNumber.Value;
             this.Animal.CurrentAnimalHealthNumber -= this.Animal.ReducedHealthNumber;
-            this.Animal.SurvivalSituation = this.Animal.CurrentAnimalHealthNumber >= 30;
+            this.Animal.SurvivalSituation = this.Animal.CurrentAnimalHealthNumber >= ZooServiceConfiguration.MonkeySurvivalHealthNumber;
             return reducedHealthNumber;
         }
     }
